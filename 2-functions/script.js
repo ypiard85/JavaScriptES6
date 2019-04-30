@@ -1,13 +1,13 @@
 //2.1 Fonctions simples
-const sayHello = function() {
+const sayHello = () => {
     console.log('Hello')
 }
 
-const sayMyName = function(first, last) {
+const sayMyName = (first, last) => {
     console.log(first, last)
 }
 
-const sayMyAge = function(age) {
+const sayMyAge = (age) => {
     console.log('You are ' + age + ' years old')
 }
 
@@ -18,16 +18,22 @@ sayMyAge(23)
 //----------------------//
 //2.2 this
 
-const object = {
-    color: 'red',
+const object = {                     //on déclare un objet
+    color: 'red',                    //et ses attributs
     shape: 'circle',
-    threeDimensions: false,
-    showThis: function() {
+    threeDimensions: false,          //dont un booléen
+    showThis: () => {                //il contient une fonction qui permet de l'afficher
         console.log(this)
     }
 }
 
-object.showThis()
+object.showThis()                   //on affiche l'objet en appelant la fonction
+
+//3) On obtient des erreurs, avec notamment le message "L’attribut « content » des objets Window est obsolète."
+//Quand on remplace "this" par du texte, cela fonctionne.
+//La notation fléchée n'est donc pas compatible avec "this".
+
+
 
 //----------------------//
 //2.3 Application
@@ -38,11 +44,14 @@ const odile = {
         last: 'Crok'
     },
     age: 23,
-    //sayHello: ...
-    //sayMyName:...
-    //sayMyAge:...
+    sayHello: () => {
+        console.log('Hello')},
+    sayMyName: (first, last) => {
+        console.log(first, last)},
+    sayMyAge: (age) => {
+        console.log('You are ' + age + ' years old')}
 }
 
-//odile.sayHello()
-//odile.sayMyName()
-//odile.sayMyAge()
+odile.sayHello()
+odile.sayMyName(odile.name.first, odile.name.last)
+odile.sayMyAge(odile.age)
