@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue JS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+
+    <h1> {{ product }}</h1>
+
+    <input type="text" v-model="saisie">
+      <div :class="{ red: active }">
+       <h1>{{ saisie }}</h1>
+
+        <h2 id="titre2">{{ texteH2 }}</h2>
+      </div>
+   <input type="text" v-model="saisie2">
+   <button v-on:click="updateContent">Modifier titre</button>
+
+   <input type="checkbox" id="checkbox" v-model="active">
+
+   <input type="checkbox" id="checkbox" v-model="show">
+   <div>
+     <img v-if="show" src="image1.jpg">
+   </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

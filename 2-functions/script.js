@@ -31,7 +31,8 @@ object.showThis()                   //on affiche l'objet en appelant la fonction
 
 //3) On obtient des erreurs, avec notamment le message "L’attribut « content » des objets Window est obsolète."
 //Quand on remplace "this" par du texte, cela fonctionne.
-//La notation fléchée n'est donc pas compatible avec "this".
+//Le this utilisé dans une fonction fléchée a une portée limitée à cette fonction.
+//ici, il ne fait donc pas référence à l'objet qui englobe la fonction.
 
 
 
