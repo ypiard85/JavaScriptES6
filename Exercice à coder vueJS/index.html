@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue JS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="app" class="container text-center">
+    <div>
+        <h1>{{ texte1 }} < {{ texte2 }}</h1>
+    </div>
+    <div>
+         <p>Counter = {{ count }}</p>
+    </div>
+    <div class="row">
+        <div class="col-3">
+        <button class="btn btn-primary" v-on:click="increaseCount">+</button>
+        <button class="btn btn-primary" v-on:click="decreaseCount">-</button>
+        </div>
+        <div class="input-group mb-3 col-6">
+            <select v-on:change="transform" v-model="choix" class="custom-select" id="inputGroupSelect01">
+                <option value="0">Français</option>
+                <option value="1">English</option>
+                <option value="2">Deutsch</option>
+                <option value="3">Español</option>
+            </select>
+        </div>
+        <div class="text-align-right col-3" id="flag">
+            <img :src="drapeau">
+        </div>
+    </div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
