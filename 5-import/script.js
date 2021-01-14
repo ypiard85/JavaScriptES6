@@ -2,11 +2,11 @@
 
 import {hello} from './functions.js' //on importe la fonction hello depuis functions.js
 import {showError} from './functions.js'
-import monDefaut from './functions.js'
+import anonyme from './functions.js'
 
 hello()                //on l'appelle
 showError('erreur')
-//monDefaut()
+// anonyme()
 
 // 5-2 Export
 

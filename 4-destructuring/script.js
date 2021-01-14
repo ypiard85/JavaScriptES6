@@ -19,12 +19,9 @@ console.log(age)
 
 //afficher texte, date de début et date de fin
 
-donnees = Object.entries(data);
-console.log(donnees);
 
-donnees.forEach(function (element)
-{   Object.entries(element);
-    console.log(element);
-    var {dateDebut, dateFin, texte} = element[1];
+Object.values(data).forEach(function (element)
+{   
+    var {dateDebut, dateFin, texte} = element;
     console.log(dateDebut, dateFin, texte);
 });

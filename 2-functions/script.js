@@ -30,9 +30,10 @@ const object = {                     //on déclare un objet
 object.showThis()                   //on affiche l'objet en appelant la fonction
 
 //3) On obtient des erreurs, avec notamment le message "L’attribut « content » des objets Window est obsolète."
-//Quand on remplace "this" par du texte, cela fonctionne.
-//Le this utilisé dans une fonction fléchée a une portée limitée à cette fonction.
-//ici, il ne fait donc pas référence à l'objet qui englobe la fonction.
+// Quand on remplace "this" par du texte, cela fonctionne.
+// => Le this utilisé dans une fonction fléchée a une portée limitée à cette fonction.
+//  => Ici, this ne fait donc pas référence à l'objet qui englobe la fonction.
+//     => faut donc remettre la syntaxe classique function(){} pour pourvoir afficher l'objet.
 
 
 
@@ -47,12 +48,12 @@ const odile = {
     age: 23,
     sayHello: () => {
         console.log('Hello')},
-    sayMyName: (first, last) => {
-        console.log(first, last)},
+    sayMyName: () => {
+        console.log(odile.name.first, odile.name.last)},
     sayMyAge: (age) => {
-        console.log('You are ' + age + ' years old')}
+        console.log('You are ' + odile.age + ' years old')}
 }
 
 odile.sayHello()
-odile.sayMyName(odile.name.first, odile.name.last)
-odile.sayMyAge(odile.age)
+odile.sayMyName()
+odile.sayMyAge()
