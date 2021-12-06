@@ -11,7 +11,13 @@ useless = 14
 
 console.log(name, age, useless)
 
+<<<<<<< HEAD
 //Nous avons une erreur sur les variables const car on essai de les modifiers alors que ces variables sont non modifiable.
+=======
+//4) On obtient l'erreur suivante TypeError: invalid assignment to const `age'. 
+//Elle signifie que l'âge ne peut être une constante, puisqu'il va être modifié juste après (age+=1).
+
+>>>>>>> 71bf7f65d7b6445c1c37747821eef35b6e639b25
 
 //----------------------//
 //1.2 Tableaux
@@ -28,8 +34,10 @@ vegetables.pop()
 
 console.log(fruits, vegetables)
 
+//2)Il n'y a pas d'erreur car les constantes ne sont pas modifiées (on ajoute juste un élément au tableau).
+
 //----------------------//
-//1.2 Objets
+//1.3 Objets
 
 const settings = {
     sound: true,
@@ -51,3 +59,7 @@ settings.music = true
 settings.resolution = [3840, 2160]
 
 console.log(settings, savedGame)
+
+//2) Erreur : TypeError: invalid assignment to const `savedGame'. 
+//savedGame ne peut pas être une constante car il va être modifié.
+
