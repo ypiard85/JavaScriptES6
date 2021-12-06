@@ -4,23 +4,24 @@
 > Exercice à réaliser dans le dossier `1-variables`
 
 ### Section 1
-1. Remplacez toutes les occurences de `var` par `let`. 
+1. Remplacez toutes les occurences de `var` par `let`.
 2. Constatez que cela ne change rien. Désormais **on n'utilisera plus `var`** mais `let` ou `const`
-3. Remplacez toutes les occurences de `let` par `const`. 
+3. Remplacez toutes les occurences de `let` par `const`.
 4. Expliquez l'erreur
 5. Corrigez le code en conservant le maximum de valeurs constantes
 
 ### Section 1
-1. Remplacez toutes les occurences de `let` par `const`. 
+1. Remplacez toutes les occurences de `let` par `const`.
 2. Expliquez **l'abscence** l'erreur
 
 ### Section 3
-1. Remplacez toutes les occurences de `let` par `const`. 
+1. Remplacez toutes les occurences de `let` par `const`.
 2. Expliquez l'erreur
 3. Corrigez le code en conservant le maximum de valeurs constantes
 
 **COMMIT!**
 
+//
 ## "Arrow functions"
 >Exercice à réaliser dans le dossier `2-functions`
 
@@ -37,6 +38,7 @@ Complétez le code pour reproduire le comportement de la section 1 mais cette fo
 
 **COMMIT!**
 
+//
 ## `Object.keys` & `Object.values`
 >Exercice à réaliser dans le dossier `3-objects`
 
@@ -55,6 +57,7 @@ Pour chacunes des perturbations du fichier `data.js` (variable `data`) afficher 
 1. **COMPRENEZ** et **COMMENTEZ** le code de la première partie
 2. Afficher le 3e élément du tableau ainsi que la propriété `age` de l'objet
 
+//
 ## Section 2
 Pour chacunes des perturbations du fichier `data.js` (variable `data`) récupérer dans des variables puis afficher leur texte, date de début et date de fin.
 
@@ -69,4 +72,4 @@ Pour chacunes des perturbations du fichier `data.js` (variable `data`) récupér
 2. Importer et utiliser la fonction anonyme définie à la fin du fichier
 
 ## Section 2
-Exporter les fonctions du fichier `math.js` pour pouvoir les utiliser dans la script principal (`script.js`)
+Exporter les fonctions du fichier `math.js` pour pouvoir les utiliser dans le script principal (`script.js`)

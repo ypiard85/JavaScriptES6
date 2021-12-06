@@ -1,12 +1,12 @@
 //1.1 Types simples
 
-var name = 'Jacques'
-var age = 80
-var useless = 'something'
+const name = 'Jacques'
+let age = 80
+let useless = 'something'
 
 console.log(name, age, useless)
 
-age += 1
+age += 1 //Une constante ne peut pas être déclarée à nouveau, donc une erreur est afficher pour la variable age
 useless = 14
 
 console.log(name, age, useless)
@@ -14,8 +14,8 @@ console.log(name, age, useless)
 //----------------------//
 //1.2 Tableaux
 
-let fruits = ['apple', 'pear', 'cherry']
-let vegetables = ['potato', 'curlyflower', 'tomato']
+const fruits = ['apple', 'pear', 'cherry']
+const vegetables = ['potato', 'curlyflower', 'tomato']
 
 console.log(fruits, vegetables)
 
@@ -24,10 +24,13 @@ vegetables.pop()
 
 console.log(fruits, vegetables)
 
+//pas d'erreur en changeant let par const const car les arrays peuvent changé mais pas le type de variable.
+//par exemple, la variable fruit, ne peut pas devenir un string.
+
 //----------------------//
 //1.2 Objets
 
-let settings = {
+const settings = {
     sound: true,
     music: false,
     graphics: 'high',
@@ -42,7 +45,7 @@ let savedGame = {
 
 console.log(settings, savedGame)
 
-savedGame = {}
+savedGame = {} //Une constante ne peut pas être déclarée à nouveau
 settings.music = true
 settings.resolution = [3840, 2160]
 
