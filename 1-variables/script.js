@@ -1,8 +1,8 @@
 //1.1 Types simples
 
-var name = 'Jacques'
-var age = 80
-var useless = 'something'
+const name = 'Jacques'
+let age = 80
+let useless = 'something'
 
 console.log(name, age, useless)
 
@@ -11,13 +11,17 @@ useless = 14
 
 console.log(name, age, useless)
 
+//Nous avons une erreur sur les variables const car on essai de les modifiers alors que ces variables sont non modifiable.
+
 //----------------------//
 //1.2 Tableaux
 
-let fruits = ['apple', 'pear', 'cherry']
-let vegetables = ['potato', 'curlyflower', 'tomato']
+const fruits = ['apple', 'pear', 'cherry']
+const vegetables = ['potato', 'curlyflower', 'tomato']
 
 console.log(fruits, vegetables)
+
+//Une constante rattacher à un array ou objet peut être modifier mais ne peut pas être déclarée à nouveau.
 
 fruits.push('banana')
 vegetables.pop()
@@ -27,7 +31,7 @@ console.log(fruits, vegetables)
 //----------------------//
 //1.2 Objets
 
-let settings = {
+const settings = {
     sound: true,
     music: false,
     graphics: 'high',
@@ -42,7 +46,7 @@ let savedGame = {
 
 console.log(settings, savedGame)
 
-savedGame = {}
+savedGame = {} //ERREUR, Une constante ne peut pas être déclarée à nouveau.
 settings.music = true
 settings.resolution = [3840, 2160]
 
