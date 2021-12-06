@@ -9,6 +9,12 @@ console.log(first)
 console.log(last)
 console.log(age + ' ans')
 
+const [,,c,] = [1, 2, 3, 4]
+console.log(c)
+
+const {age} = {first: 'Paul', last: 'Henta', age: 35}
+console.log(age)
+
 //4.2 Application
 
 const clef = Object.values(data)

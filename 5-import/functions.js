@@ -44,5 +44,5 @@ function nyan(){
     if(_nyan == 0){ _nyan = 1; } else { _nyan = 0; }
 }
 
-window.setInterval(nyan, 300)
+window.setInterval(nyan, 1000)
 }
